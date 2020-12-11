@@ -100,8 +100,8 @@ void NewProjectAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
     
     compressor.prepare(spec);
     
-    compressor.setRatio(30.0f);
-    compressor.setThreshold(-50.0f);
+    compressor.setRatio(4.0f);
+    compressor.setThreshold(-16.0f);
     compressor.setAttack(20.0f);
     compressor.setRelease(5.0f);
 }
