@@ -19,13 +19,40 @@ NewProjectAudioProcessor::NewProjectAudioProcessor()
                       #endif
                        .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
                      #endif
-                       )
+                       ),
+treeState (*this, nullptr, "PARAMETER", createParameterLayout())
 #endif
 {
 }
 
 NewProjectAudioProcessor::~NewProjectAudioProcessor()
 {
+}
+
+juce::AudioProcessorValueTreeState::ParameterLayout NewProjectAudioProcessor::createParameterLayout()
+{
+    std::vector <std::unique_ptr<juce::RangedAudioParameter>> params;
+    params.reserve(10);
+    
+    
+    auto inputGainParam = std::make_unique<juce::AudioParameterFloat>(inputGainSliderId, inputGainSliderName, -48, 48, 0);
+    auto ratioParam = std::make_unique<juce::AudioParameterInt>(ratioSliderId, ratioSliderName, 1, 20, 1);
+    auto threshParam = std::make_unique<juce::AudioParameterFloat>(threshSliderId, threshSliderName, -60.0f, 0.0f, 0.0f);
+    auto attackParam = std::make_unique<juce::AudioParameterInt>(attackSliderId, attackSliderName, 10, 250, 250);
+    auto releaseParam = std::make_unique<juce::AudioParameterInt>(releaseSliderId, releaseSliderName, 10, 5000, 5000);
+    auto outputGainParam = std::make_unique<juce::AudioParameterFloat>(outputGainSliderId, outputGainSliderName, -48, 48, 0);
+    
+    
+    params.push_back(std::move(inputGainParam));
+    params.push_back(std::move(ratioParam));
+    params.push_back(std::move(threshParam));
+    params.push_back(std::move(attackParam));
+    params.push_back(std::move(releaseParam));
+    params.push_back(std::move(outputGainParam));
+    
+
+    
+    return { params.begin(), params.end() };
 }
 
 //==============================================================================
@@ -98,12 +125,13 @@ void NewProjectAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
     spec.sampleRate = sampleRate;
     spec.numChannels = getTotalNumOutputChannels();
     
-    compressor.prepare(spec);
+    compressorProcessor.prepare(spec);
+    inputGainProcessor.prepare(spec);
+    outputGainProcessor.prepare(spec);
     
-    compressor.setRatio(4.0f);
-    compressor.setThreshold(-16.0f);
-    compressor.setAttack(20.0f);
-    compressor.setRelease(5.0f);
+    compressorProcessor.setRatio(4.0f);
+    compressorProcessor.setAttack(250.0f);
+    
 }
 
 void NewProjectAudioProcessor::releaseResources()
@@ -145,9 +173,31 @@ void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
     
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
-
+    
     juce::dsp::AudioBlock<float> audioBlock {buffer};
-    compressor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
+    
+    auto* rawGain = treeState.getRawParameterValue(inputGainSliderId);
+    inputGainProcessor.setGainDecibels(*rawGain);
+    
+    //auto* rawRatio = treeState.getRawParameterValue(ratioSliderId);
+    auto* rawThresh = treeState.getRawParameterValue(threshSliderId);
+    //auto* rawAttack = treeState.getRawParameterValue(attackSliderId);
+    auto* rawRelease = treeState.getRawParameterValue(releaseSliderId);
+    //compressorProcessor.setRatio(*rawRatio);
+    compressorProcessor.setThreshold(*rawThresh);
+    //compressorProcessor.setAttack(*rawAttack);
+    compressorProcessor.setRelease(*rawRelease);
+    
+    auto* rawOutputGain = treeState.getRawParameterValue(outputGainSliderId);
+//    if (*rawThresh <= -30.0f){
+//        *rawOutputGain = abs(*rawThresh) * .5;
+//        std::cout << *rawOutputGain << std::endl;
+//    }
+    outputGainProcessor.setGainDecibels(*rawOutputGain);
+
+    inputGainProcessor.process(juce::dsp::ProcessContextReplacing<float>(audioBlock));
+    compressorProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
+    outputGainProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
 }
 
 //==============================================================================

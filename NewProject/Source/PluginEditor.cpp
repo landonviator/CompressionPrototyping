@@ -28,34 +28,45 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
         sliders[i]->setColour(0x1001700, juce::Colour::fromFloatRGBA(1, 1, 1, 0.0f));
         
         if (sliders[i] == &inputGainSlider){
-            sliders[i]->setRange(-24.0f, 24.0f, 0.5f);
+            sliders[i]->setRange(-48.0f, 48.0f, 0.5f);
             sliders[i]->setTextValueSuffix(" dB");
             sliders[i]->setDoubleClickReturnValue(true, 0.0f);
+            inputGainSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, inputGainSliderId, inputGainSlider);
             
         } else if (sliders[i] == &ratioSlider){
             sliders[i]->setRange(1, 20, 1);
             sliders[i]->setTextValueSuffix(" X");
             sliders[i]->setDoubleClickReturnValue(true, 1);
+            ratioSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, ratioSliderId, ratioSlider);
+
             
         } else if (sliders[i] == &thresholdSlider){
-            sliders[i]->setRange(-60.0f, 0.0f, 0.5f);
+            sliders[i]->setRange(-60.0f, 0.0f, 1);
             sliders[i]->setTextValueSuffix(" dB");
             sliders[i]->setDoubleClickReturnValue(true, 0);
+            thresholdSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, threshSliderId, thresholdSlider);
+
             
         } else if (sliders[i] == &attackSlider){
-            sliders[i]->setRange(5, 100, 1);
+            sliders[i]->setRange(5, 250, 1);
             sliders[i]->setTextValueSuffix(" Ms");
             sliders[i]->setDoubleClickReturnValue(true, 100);
+            attackSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, attackSliderId, attackSlider);
+
             
         } else if (sliders[i] == &releaseSlider){
-            sliders[i]->setRange(5, 100, 1);
+            sliders[i]->setRange(5, 5000, 1);
             sliders[i]->setTextValueSuffix(" Ms");
             sliders[i]->setDoubleClickReturnValue(true, 100);
+            releaseSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, releaseSliderId, releaseSlider);
+
             
         } else {
-            sliders[i]->setRange(-24.0f, 24.0f, 0.5f);
+            sliders[i]->setRange(-48.0f, 48.0f, 0.5f);
             sliders[i]->setTextValueSuffix(" dB");
             sliders[i]->setDoubleClickReturnValue(true, 0.0f);
+            outputGainSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, outputGainSliderId, outputGainSlider);
+
         }
         
         if (sliders[i] == &inputGainSlider){

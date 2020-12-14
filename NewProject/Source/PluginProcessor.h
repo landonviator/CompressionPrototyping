@@ -10,6 +10,24 @@
 
 #include <JuceHeader.h>
 
+#define inputGainSliderId "inputGain"
+#define inputGainSliderName "Input Gain"
+
+#define ratioSliderId "ratio"
+#define ratioSliderName "Ratio"
+
+#define threshSliderId "thresh"
+#define threshSliderName "Threshold"
+
+#define attackSliderId "attack"
+#define attackSliderName "Attack"
+
+#define releaseSliderId "release"
+#define releaseSliderName "Release"
+
+#define outputGainSliderId "outputGain"
+#define outputGainSliderName "Output Gain"
+
 //==============================================================================
 /**
 */
@@ -52,9 +70,14 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
+    
+    juce::AudioProcessorValueTreeState treeState;
+    juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
 
 private:
-    juce::dsp::Compressor<float> compressor;
+    juce::dsp::Compressor<float> compressorProcessor;
+    juce::dsp::Gain<float> inputGainProcessor;
+    juce::dsp::Gain<float> outputGainProcessor;
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NewProjectAudioProcessor)
 };
