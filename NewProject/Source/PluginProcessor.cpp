@@ -8,6 +8,7 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include <math.h>
 
 //==============================================================================
 NewProjectAudioProcessor::NewProjectAudioProcessor()
@@ -179,19 +180,22 @@ void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
     auto* rawGain = treeState.getRawParameterValue(inputGainSliderId);
     inputGainProcessor.setGainDecibels(*rawGain);
     
-    //auto* rawRatio = treeState.getRawParameterValue(ratioSliderId);
     auto* rawThresh = treeState.getRawParameterValue(threshSliderId);
-    //auto* rawAttack = treeState.getRawParameterValue(attackSliderId);
-    auto* rawRelease = treeState.getRawParameterValue(releaseSliderId);
-    //compressorProcessor.setRatio(*rawRatio);
     compressorProcessor.setThreshold(*rawThresh);
-    //compressorProcessor.setAttack(*rawAttack);
+    
+    auto* rawRelease = treeState.getRawParameterValue(releaseSliderId);
     compressorProcessor.setRelease(*rawRelease);
     
+    //auto* rawRatio = treeState.getRawParameterValue(ratioSliderId);
+    //auto* rawAttack = treeState.getRawParameterValue(attackSliderId);
+    //compressorProcessor.setRatio(*rawRatio);
+    //compressorProcessor.setAttack(*rawAttack);
+    
     auto* rawOutputGain = treeState.getRawParameterValue(outputGainSliderId);
+    //Auto gain after -30 thresh
 //    if (*rawThresh <= -30.0f){
-//        *rawOutputGain = abs(*rawThresh) * .5;
-//        std::cout << *rawOutputGain << std::endl;
+//        *rawOutputGain = pow(10, (*rawThresh * 0.022f) * -1);
+//        *rawOutputGain = (round(*rawOutputGain * 2) * 0.5f) - 3.5;
 //    }
     outputGainProcessor.setGainDecibels(*rawOutputGain);
 
