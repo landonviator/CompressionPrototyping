@@ -15,6 +15,7 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
 {
     
     int leftMargin = 64;
+    int topMargin = 80;
     sliders.reserve(4);
     sliders = {
         &inputGainSlider, &thresholdSlider, &releaseSlider, &outputGainSlider
@@ -58,16 +59,16 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
             inputGainSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, inputGainSliderId, inputGainSlider);
             
         } else if (sliders[i] == &thresholdSlider){
-            sliders[i]->setRange(-60.0f, 0.0f, 1);
-            sliderTracks[i]->setRange(-60.0f, 0.0f, 1);
+            sliders[i]->setRange(0.0f, 60.0f, 0.5f);
+            sliderTracks[i]->setRange(0.0f, 60.0f, 0.5f);
             sliderTracks[i]->setTextValueSuffix(" dB");
             sliders[i]->setTextValueSuffix(" dB");
             sliders[i]->setDoubleClickReturnValue(true, 0);
             thresholdSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, threshSliderId, thresholdSlider);
 
         } else if (sliders[i] == &releaseSlider){
-            sliders[i]->setRange(5, 5000, 1);
-            sliderTracks[i]->setRange(5, 5000, 1);
+            sliders[i]->setRange(0.0f, 100.0f, 1.0f);
+            sliderTracks[i]->setRange(0.0f, 100.0f, 1.0f);
             sliderTracks[i]->setTextValueSuffix(" %");
             sliders[i]->setTextValueSuffix(" Ms");
             sliders[i]->setDoubleClickReturnValue(true, 100);
@@ -83,11 +84,11 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
         }
         
         if (sliders[i] == &inputGainSlider){
-            sliders[i]->setBounds(leftMargin, 64, 145, 145);
-            sliderTracks[i]->setBounds(leftMargin + 6, leftMargin + 2, 133, 133);
+            sliders[i]->setBounds(leftMargin, topMargin, 145, 145);
+            sliderTracks[i]->setBounds(leftMargin + 6, topMargin + 2, 133, 133);
         } else {
-            sliders[i]->setBounds(sliders[i - 1]->getX() +  sliders[i - 1]->getWidth(), 64, 145, 145);
-            sliderTracks[i]->setBounds(sliders[i - 1]->getX() +  sliders[i - 1]->getWidth() + 6, leftMargin + 2, 133, 133);
+            sliders[i]->setBounds(sliders[i - 1]->getX() +  sliders[i - 1]->getWidth(), topMargin, 145, 145);
+            sliderTracks[i]->setBounds(sliders[i - 1]->getX() +  sliders[i - 1]->getWidth() + 6, topMargin + 2, 133, 133);
         }
     }
     
@@ -122,7 +123,7 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
 //    ratioLabel.setColour(0x1000281, juce::Colour::fromFloatRGBA(1, 1, 1, 0.5f));
     
     addAndMakeVisible(threshLabel);
-    threshLabel.setText("Compress", juce::dontSendNotification);
+    threshLabel.setText("Compression", juce::dontSendNotification);
     threshLabel.attachToComponent(&thresholdSlider, false);
     threshLabel.setJustificationType(juce::Justification::centred);
     threshLabel.setColour(0x1000281, juce::Colour::fromFloatRGBA(1, 1, 1, 0.5f));
@@ -134,7 +135,7 @@ NewProjectAudioProcessorEditor::NewProjectAudioProcessorEditor (NewProjectAudioP
 //    attackLabel.setColour(0x1000281, juce::Colour::fromFloatRGBA(1, 1, 1, 0.5f));
     
     addAndMakeVisible(releaseLabel);
-    releaseLabel.setText("Thump", juce::dontSendNotification);
+    releaseLabel.setText("Edge", juce::dontSendNotification);
     releaseLabel.attachToComponent(&releaseSlider, false);
     releaseLabel.setJustificationType(juce::Justification::centred);
     releaseLabel.setColour(0x1000281, juce::Colour::fromFloatRGBA(1, 1, 1, 0.5f));
