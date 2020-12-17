@@ -5,730 +5,1222 @@
 	};
 	objectVersion = 46;
 	objects = {
-
-/* Begin PBXAggregateTarget section */
-		3C7AD46FF0100DE562FEB05D /* Viator_Compressor_Mac_Silicon - All */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = FE41601ADD40B8283E6C245B /* Build configuration list for PBXAggregateTarget "Viator_Compressor_Mac_Silicon - All" */;
-			buildPhases = (
-			);
-			dependencies = (
-				AC88A4663ED1AEDBCA2D0F0A /* PBXTargetDependency */,
-				7DEBF4A03811F5A70256AE49 /* PBXTargetDependency */,
-				16EFA99A648EAC2F76CE75B4 /* PBXTargetDependency */,
-				B6BC27617BF1BB0C9F6F0704 /* PBXTargetDependency */,
-			);
-			name = "Viator_Compressor_Mac_Silicon - All";
-			productName = Viator_Compressor_Mac_Silicon;
+		B216D659FC2A34CB9F88D011 = {
+			isa = PBXBuildFile;
+			fileRef = 64A69FA6465778F87FFBE8EF;
 		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		12497B5F59EAF9EDECA2A3B4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFCAFE5879077D60258E584 /* IOKit.framework */; };
-		1331EBB707164D563D089106 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0DB072A64732A47B0012FE /* QuartzCore.framework */; };
-		230DE2AB8C8AA1FEA95D7FFF /* include_juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46AD578A32B96D9442E91D8A /* include_juce_events.mm */; };
-		284FF555258BE5CA00CCC19D /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0200821EBCD0DCEE21403E /* RecentFilesMenuTemplate.nib */; };
-		284FF556258BE5CA00CCC19D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E717BE07EEAEC624D1F214E /* Accelerate.framework */; };
-		284FF557258BE5CA00CCC19D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7043F2260826161FF57C84C /* AudioToolbox.framework */; };
-		284FF558258BE5CA00CCC19D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C541F9122D3E0631A26CCE5 /* Carbon.framework */; };
-		284FF559258BE5CA00CCC19D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2834F01D6C4C41490058E1C9 /* Cocoa.framework */; };
-		284FF55A258BE5CA00CCC19D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4773C9871D90AFD8415861D /* CoreAudio.framework */; };
-		284FF55B258BE5CA00CCC19D /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F6692245C4F9C07EC999 /* CoreAudioKit.framework */; };
-		284FF55C258BE5CA00CCC19D /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DFBF812B09C8A5CEEE348 /* CoreMIDI.framework */; };
-		284FF55D258BE5CA00CCC19D /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D88F6AC317AD446192792 /* DiscRecording.framework */; };
-		284FF55E258BE5CA00CCC19D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E429D4336A91A78F8DD0F3E /* Foundation.framework */; };
-		284FF55F258BE5CA00CCC19D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFCAFE5879077D60258E584 /* IOKit.framework */; };
-		284FF560258BE5CA00CCC19D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0DB072A64732A47B0012FE /* QuartzCore.framework */; };
-		284FF561258BE5CA00CCC19D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71F43C47F49793932EF45B /* WebKit.framework */; };
-		284FF562258BE5CA00CCC19D /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0200821EBCD0DCEE21403E /* RecentFilesMenuTemplate.nib */; };
-		284FF563258BE5CA00CCC19D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E717BE07EEAEC624D1F214E /* Accelerate.framework */; };
-		284FF564258BE5CA00CCC19D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7043F2260826161FF57C84C /* AudioToolbox.framework */; };
-		284FF565258BE5CA00CCC19D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C541F9122D3E0631A26CCE5 /* Carbon.framework */; };
-		284FF566258BE5CA00CCC19D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2834F01D6C4C41490058E1C9 /* Cocoa.framework */; };
-		284FF567258BE5CA00CCC19D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4773C9871D90AFD8415861D /* CoreAudio.framework */; };
-		284FF568258BE5CA00CCC19D /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F6692245C4F9C07EC999 /* CoreAudioKit.framework */; };
-		284FF569258BE5CA00CCC19D /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DFBF812B09C8A5CEEE348 /* CoreMIDI.framework */; };
-		284FF56A258BE5CA00CCC19D /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D88F6AC317AD446192792 /* DiscRecording.framework */; };
-		284FF56B258BE5CA00CCC19D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E429D4336A91A78F8DD0F3E /* Foundation.framework */; };
-		284FF56C258BE5CA00CCC19D /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFCAFE5879077D60258E584 /* IOKit.framework */; };
-		284FF56D258BE5CA00CCC19D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0DB072A64732A47B0012FE /* QuartzCore.framework */; };
-		284FF56E258BE5CA00CCC19D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71F43C47F49793932EF45B /* WebKit.framework */; };
-		28D5261800C82565DE7B2EA5 /* include_juce_audio_plugin_client_AU_1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A6EABD96DB5B51026AD21D8 /* include_juce_audio_plugin_client_AU_1.mm */; };
-		310F6288F086CD55DD360A61 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 3F0200821EBCD0DCEE21403E /* RecentFilesMenuTemplate.nib */; };
-		33557A05D3C110268990127F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7043F2260826161FF57C84C /* AudioToolbox.framework */; };
-		370283CE4756E2847D6BCB6B /* include_juce_audio_plugin_client_AU.r in Rez */ = {isa = PBXBuildFile; fileRef = D347F7AD9278C158A71F77F6 /* include_juce_audio_plugin_client_AU.r */; };
-		3ACD48456E0598F05CB2CC91 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71F43C47F49793932EF45B /* WebKit.framework */; };
-		3B3260E74EA2CEA145B959A5 /* include_juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = B524433E611CB6704A5BB457 /* include_juce_audio_devices.mm */; };
-		4CA101D9C60676826DB46313 /* include_juce_dsp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 953411AF7630AE062FEB67EA /* include_juce_dsp.mm */; };
-		4F7204784A021849569BB7C8 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B13DE65AD5442E18C3E32F6 /* AudioUnit.framework */; };
-		5385CD2A625A829E1841DCCD /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DFBF812B09C8A5CEEE348 /* CoreMIDI.framework */; };
-		5800171324B945359DBF9D9A /* include_juce_graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77E83F321DDFEF11ECB1C9A1 /* include_juce_graphics.mm */; };
-		58F272AACACC4200185D2E69 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2834F01D6C4C41490058E1C9 /* Cocoa.framework */; };
-		59D2C1BCDE9BFC721A45FB8C /* include_juce_audio_processors.mm in Sources */ = {isa = PBXBuildFile; fileRef = 345F13BEDFE2F4B2DE89906F /* include_juce_audio_processors.mm */; };
-		5E4B2242FAC53D51D91FAC88 /* include_juce_data_structures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 19A99699DA51CB2B0954C3A8 /* include_juce_data_structures.mm */; };
-		6E76EA1C0A138601A9DCC936 /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21D88F6AC317AD446192792 /* DiscRecording.framework */; };
-		717BE05999F58DF8E6897705 /* include_juce_audio_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = B74673DBBF7B2A4298C79397 /* include_juce_audio_utils.mm */; };
-		720D3C0DA291C1D71573D102 /* PluginEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDF7AE0DAC75058EBCDB5BBB /* PluginEditor.cpp */; };
-		73ACB98C6211A878C1B92CCD /* include_juce_audio_plugin_client_VST3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02342775DE69FF57797EE19C /* include_juce_audio_plugin_client_VST3.cpp */; };
-		74F0A55660CA7FE04703F3AC /* include_juce_audio_plugin_client_VST_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFB3B925F2699D92E3EE6C /* include_juce_audio_plugin_client_VST_utils.mm */; };
-		7732F1A207CF6B7BF972359D /* PluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56786F45F46D76970ED6562A /* PluginProcessor.cpp */; };
-		8FC44F44645E87B5099B7544 /* include_juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B4EDAAD128C379CA80ECBC4 /* include_juce_audio_basics.mm */; };
-		955B8AFB65B6DB74C004FE85 /* include_juce_audio_plugin_client_Standalone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9794436AD0574F1CD854CEA5 /* include_juce_audio_plugin_client_Standalone.cpp */; };
-		9FD538AF3788EC598349BE56 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4773C9871D90AFD8415861D /* CoreAudio.framework */; };
-		ACB69F355147A1F059DE566E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E717BE07EEAEC624D1F214E /* Accelerate.framework */; };
-		B761959464ECFA57AFFF539B /* include_juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA087CA24AE18F180D4F5111 /* include_juce_gui_basics.mm */; };
-		C8EC0933DFAD50488625EE01 /* include_juce_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E8A1B2952B8A61F2A001A /* include_juce_core.mm */; };
-		D337B4869BFF70D1C15553A5 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C541F9122D3E0631A26CCE5 /* Carbon.framework */; };
-		D6584E9DB7E5B9EBAD4F30A6 /* include_juce_audio_plugin_client_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB6C1FE2D0E974F93AA0E99C /* include_juce_audio_plugin_client_utils.cpp */; };
-		E736356DFDE87D60293AE564 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F6692245C4F9C07EC999 /* CoreAudioKit.framework */; };
-		E96D7E67006EA275B0F06685 /* include_juce_audio_formats.mm in Sources */ = {isa = PBXBuildFile; fileRef = 474E40B602CCD8D23ACB3652 /* include_juce_audio_formats.mm */; };
-		E97C597B622EDD0B30388B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E429D4336A91A78F8DD0F3E /* Foundation.framework */; };
-		F43012ECFF938D721D626ED5 /* include_juce_audio_plugin_client_AU_2.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65AC940CFF29EAC20304154D /* include_juce_audio_plugin_client_AU_2.mm */; };
-		FCA63D8DCCD541044BF44E48 /* include_juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4B37936EC685E2A6D1464177 /* include_juce_gui_extra.mm */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		284FF56F258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 018E0ED45A3C51360ABC6EBD;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - Shared Code";
+		33DFB51CF3190AABC4ABA5D6 = {
+			isa = PBXBuildFile;
+			fileRef = 4249D77F1B3658B038EE3804;
 		};
-		284FF570258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 018E0ED45A3C51360ABC6EBD;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - Shared Code";
+		76D3DB81B818146EBEEDC89C = {
+			isa = PBXBuildFile;
+			fileRef = 62EAEEAFA112FC66CFD6FEE7;
 		};
-		284FF571258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 018E0ED45A3C51360ABC6EBD;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - Shared Code";
+		C8ED546EBC97C2B4491CA1D2 = {
+			isa = PBXBuildFile;
+			fileRef = D916A482E292166C6A9BDFE1;
 		};
-		284FF572258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1B6E55F0B345F14D07AAE50E;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - VST3";
+		4F7204784A021849569BB7C8 = {
+			isa = PBXBuildFile;
+			fileRef = 1B13DE65AD5442E18C3E32F6;
 		};
-		284FF573258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EFA4F56F3F495CFF93E652BD;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - AU";
+		ACB69F355147A1F059DE566E = {
+			isa = PBXBuildFile;
+			fileRef = 2E717BE07EEAEC624D1F214E;
 		};
-		284FF574258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6F89E3EFE6CC3C3EC7B2F68;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - Standalone Plugin";
+		33557A05D3C110268990127F = {
+			isa = PBXBuildFile;
+			fileRef = D7043F2260826161FF57C84C;
 		};
-		284FF575258BE5CA00CCC19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 811EC5BE349A34F08149DF66 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 018E0ED45A3C51360ABC6EBD;
-			remoteInfo = "Viator_Compressor_Mac_Silicon - Shared Code";
+		D337B4869BFF70D1C15553A5 = {
+			isa = PBXBuildFile;
+			fileRef = 1C541F9122D3E0631A26CCE5;
 		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		02342775DE69FF57797EE19C /* include_juce_audio_plugin_client_VST3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_VST3.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp; sourceTree = SOURCE_ROOT; };
-		093DFBF812B09C8A5CEEE348 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		0A6EABD96DB5B51026AD21D8 /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_1.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm; sourceTree = SOURCE_ROOT; };
-		0BFCAFE5879077D60258E584 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		19A99699DA51CB2B0954C3A8 /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
-		1B13DE65AD5442E18C3E32F6 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
-		1C541F9122D3E0631A26CCE5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		1C71F43C47F49793932EF45B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		2834F01D6C4C41490058E1C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		2E717BE07EEAEC624D1F214E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		345F13BEDFE2F4B2DE89906F /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
-		34E07CD02E5FB374368B6BBF /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = /Users/land00m/Documents/JUCE/modules/juce_graphics; sourceTree = "<absolute>"; };
-		389A21383C331D464406168E /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = /Users/land00m/Documents/JUCE/modules/juce_audio_basics; sourceTree = "<absolute>"; };
-		3F0200821EBCD0DCEE21403E /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
-		4249D77F1B3658B038EE3804 /* Viator_Compressor_Mac_Silicon.component */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Viator_Compressor_Mac_Silicon.component; sourceTree = BUILT_PRODUCTS_DIR; };
-		46AD578A32B96D9442E91D8A /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
-		474E40B602CCD8D23ACB3652 /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
-		4B37936EC685E2A6D1464177 /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
-		55AEA5043EB1F87718B5D0E8 /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
-		56786F45F46D76970ED6562A /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
-		5B4EDAAD128C379CA80ECBC4 /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
-		5E429D4336A91A78F8DD0F3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5E94136EBF0A8FA85F106234 /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
-		62EAEEAFA112FC66CFD6FEE7 /* Viator_Compressor_Mac_Silicon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viator_Compressor_Mac_Silicon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		64A69FA6465778F87FFBE8EF /* Viator_Compressor_Mac_Silicon.vst3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Viator_Compressor_Mac_Silicon.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
-		65AC940CFF29EAC20304154D /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_2.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm; sourceTree = SOURCE_ROOT; };
-		6DED318F6101F2C2C0C96FF1 /* Info-VST3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-VST3.plist"; sourceTree = SOURCE_ROOT; };
-		6F7A78A6E2F093F5C15A03B1 /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/land00m/Documents/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
-		70763BCE796619FC8DAB2AB6 /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
-		74AB932368712C8C393AD718 /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = /Users/land00m/Documents/JUCE/modules/juce_audio_formats; sourceTree = "<absolute>"; };
-		77E83F321DDFEF11ECB1C9A1 /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
-		8325946D9496E28ECA1BEAB3 /* juce_dsp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_dsp; path = /Users/land00m/Documents/JUCE/modules/juce_dsp; sourceTree = "<absolute>"; };
-		8BBFB3B925F2699D92E3EE6C /* include_juce_audio_plugin_client_VST_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_VST_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm; sourceTree = SOURCE_ROOT; };
-		8D0DB072A64732A47B0012FE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		953411AF7630AE062FEB67EA /* include_juce_dsp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_dsp.mm; path = ../../JuceLibraryCode/include_juce_dsp.mm; sourceTree = SOURCE_ROOT; };
-		9794436AD0574F1CD854CEA5 /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
-		9DC398C37E6939861470FA6E /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
-		9E4E8A1B2952B8A61F2A001A /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
-		A16F402504B1D88D625E023B /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = /Users/land00m/Documents/JUCE/modules/juce_audio_processors; sourceTree = "<absolute>"; };
-		A4773C9871D90AFD8415861D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		A690B1525E95B4797D83A80A /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = /Users/land00m/Documents/JUCE/modules/juce_data_structures; sourceTree = "<absolute>"; };
-		B524433E611CB6704A5BB457 /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
-		B74673DBBF7B2A4298C79397 /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
-		BC5BE5112B8C6B24539ADAF6 /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = /Users/land00m/Documents/JUCE/modules/juce_gui_extra; sourceTree = "<absolute>"; };
-		BDD6F6692245C4F9C07EC999 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
-		BDF7AE0DAC75058EBCDB5BBB /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
-		C21D88F6AC317AD446192792 /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
-		D347F7AD9278C158A71F77F6 /* include_juce_audio_plugin_client_AU.r */ = {isa = PBXFileReference; lastKnownFileType = file.r; name = include_juce_audio_plugin_client_AU.r; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r; sourceTree = SOURCE_ROOT; };
-		D7043F2260826161FF57C84C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		D916A482E292166C6A9BDFE1 /* libViator_Compressor_Mac_Silicon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libViator_Compressor_Mac_Silicon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E54E9D6D51D12CAB9989FDCC /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = /Users/land00m/Documents/JUCE/modules/juce_gui_basics; sourceTree = "<absolute>"; };
-		EA087CA24AE18F180D4F5111 /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
-		EB159D2E7EE808CAD8E95647 /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
-		EB6C1FE2D0E974F93AA0E99C /* include_juce_audio_plugin_client_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_utils.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp; sourceTree = SOURCE_ROOT; };
-		ED2BBF3A37B7CC46E428D356 /* juce_audio_plugin_client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_plugin_client; path = /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client; sourceTree = "<absolute>"; };
-		EDFDBF69BBC58ADB5D123E6C /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = /Users/land00m/Documents/JUCE/modules/juce_audio_devices; sourceTree = "<absolute>"; };
-		F2F7D2DA76036788995DA431 /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
-		F4F08AF46D5B15B454AEAC3B /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = /Users/land00m/Documents/JUCE/modules/juce_core; sourceTree = "<absolute>"; };
-		F61931744F34860FDF13FDF7 /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = /Users/land00m/Documents/JUCE/modules/juce_audio_utils; sourceTree = "<absolute>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2EFE001726E0D096FF7725CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				284FF563258BE5CA00CCC19D /* Accelerate.framework in Frameworks */,
-				284FF564258BE5CA00CCC19D /* AudioToolbox.framework in Frameworks */,
-				284FF565258BE5CA00CCC19D /* Carbon.framework in Frameworks */,
-				284FF566258BE5CA00CCC19D /* Cocoa.framework in Frameworks */,
-				284FF567258BE5CA00CCC19D /* CoreAudio.framework in Frameworks */,
-				284FF568258BE5CA00CCC19D /* CoreAudioKit.framework in Frameworks */,
-				284FF569258BE5CA00CCC19D /* CoreMIDI.framework in Frameworks */,
-				284FF56A258BE5CA00CCC19D /* DiscRecording.framework in Frameworks */,
-				284FF56B258BE5CA00CCC19D /* Foundation.framework in Frameworks */,
-				284FF56C258BE5CA00CCC19D /* IOKit.framework in Frameworks */,
-				284FF56D258BE5CA00CCC19D /* QuartzCore.framework in Frameworks */,
-				284FF56E258BE5CA00CCC19D /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		58F272AACACC4200185D2E69 = {
+			isa = PBXBuildFile;
+			fileRef = 2834F01D6C4C41490058E1C9;
 		};
-		332AF9024492CE45E4BB8D33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F7204784A021849569BB7C8 /* AudioUnit.framework in Frameworks */,
-				284FF556258BE5CA00CCC19D /* Accelerate.framework in Frameworks */,
-				284FF557258BE5CA00CCC19D /* AudioToolbox.framework in Frameworks */,
-				284FF558258BE5CA00CCC19D /* Carbon.framework in Frameworks */,
-				284FF559258BE5CA00CCC19D /* Cocoa.framework in Frameworks */,
-				284FF55A258BE5CA00CCC19D /* CoreAudio.framework in Frameworks */,
-				284FF55B258BE5CA00CCC19D /* CoreAudioKit.framework in Frameworks */,
-				284FF55C258BE5CA00CCC19D /* CoreMIDI.framework in Frameworks */,
-				284FF55D258BE5CA00CCC19D /* DiscRecording.framework in Frameworks */,
-				284FF55E258BE5CA00CCC19D /* Foundation.framework in Frameworks */,
-				284FF55F258BE5CA00CCC19D /* IOKit.framework in Frameworks */,
-				284FF560258BE5CA00CCC19D /* QuartzCore.framework in Frameworks */,
-				284FF561258BE5CA00CCC19D /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		9FD538AF3788EC598349BE56 = {
+			isa = PBXBuildFile;
+			fileRef = A4773C9871D90AFD8415861D;
 		};
-		F79B49282A8CFC6360DF0609 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACB69F355147A1F059DE566E /* Accelerate.framework in Frameworks */,
-				33557A05D3C110268990127F /* AudioToolbox.framework in Frameworks */,
-				D337B4869BFF70D1C15553A5 /* Carbon.framework in Frameworks */,
-				58F272AACACC4200185D2E69 /* Cocoa.framework in Frameworks */,
-				9FD538AF3788EC598349BE56 /* CoreAudio.framework in Frameworks */,
-				E736356DFDE87D60293AE564 /* CoreAudioKit.framework in Frameworks */,
-				5385CD2A625A829E1841DCCD /* CoreMIDI.framework in Frameworks */,
-				6E76EA1C0A138601A9DCC936 /* DiscRecording.framework in Frameworks */,
-				E97C597B622EDD0B30388B86 /* Foundation.framework in Frameworks */,
-				12497B5F59EAF9EDECA2A3B4 /* IOKit.framework in Frameworks */,
-				1331EBB707164D563D089106 /* QuartzCore.framework in Frameworks */,
-				3ACD48456E0598F05CB2CC91 /* WebKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		E736356DFDE87D60293AE564 = {
+			isa = PBXBuildFile;
+			fileRef = BDD6F6692245C4F9C07EC999;
 		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		00DC25A407D21F0BDBF110E6 /* JUCE Modules */ = {
+		5385CD2A625A829E1841DCCD = {
+			isa = PBXBuildFile;
+			fileRef = 093DFBF812B09C8A5CEEE348;
+		};
+		6E76EA1C0A138601A9DCC936 = {
+			isa = PBXBuildFile;
+			fileRef = C21D88F6AC317AD446192792;
+		};
+		E97C597B622EDD0B30388B86 = {
+			isa = PBXBuildFile;
+			fileRef = 5E429D4336A91A78F8DD0F3E;
+		};
+		12497B5F59EAF9EDECA2A3B4 = {
+			isa = PBXBuildFile;
+			fileRef = 0BFCAFE5879077D60258E584;
+		};
+		1331EBB707164D563D089106 = {
+			isa = PBXBuildFile;
+			fileRef = 8D0DB072A64732A47B0012FE;
+		};
+		3ACD48456E0598F05CB2CC91 = {
+			isa = PBXBuildFile;
+			fileRef = 1C71F43C47F49793932EF45B;
+		};
+		310F6288F086CD55DD360A61 = {
+			isa = PBXBuildFile;
+			fileRef = 3F0200821EBCD0DCEE21403E;
+		};
+		7732F1A207CF6B7BF972359D = {
+			isa = PBXBuildFile;
+			fileRef = 56786F45F46D76970ED6562A;
+		};
+		720D3C0DA291C1D71573D102 = {
+			isa = PBXBuildFile;
+			fileRef = BDF7AE0DAC75058EBCDB5BBB;
+		};
+		8FC44F44645E87B5099B7544 = {
+			isa = PBXBuildFile;
+			fileRef = 5B4EDAAD128C379CA80ECBC4;
+		};
+		3B3260E74EA2CEA145B959A5 = {
+			isa = PBXBuildFile;
+			fileRef = B524433E611CB6704A5BB457;
+		};
+		E96D7E67006EA275B0F06685 = {
+			isa = PBXBuildFile;
+			fileRef = 474E40B602CCD8D23ACB3652;
+		};
+		370283CE4756E2847D6BCB6B = {
+			isa = PBXBuildFile;
+			fileRef = D347F7AD9278C158A71F77F6;
+		};
+		28D5261800C82565DE7B2EA5 = {
+			isa = PBXBuildFile;
+			fileRef = 0A6EABD96DB5B51026AD21D8;
+		};
+		F43012ECFF938D721D626ED5 = {
+			isa = PBXBuildFile;
+			fileRef = 65AC940CFF29EAC20304154D;
+		};
+		955B8AFB65B6DB74C004FE85 = {
+			isa = PBXBuildFile;
+			fileRef = 9794436AD0574F1CD854CEA5;
+		};
+		D6584E9DB7E5B9EBAD4F30A6 = {
+			isa = PBXBuildFile;
+			fileRef = EB6C1FE2D0E974F93AA0E99C;
+		};
+		74F0A55660CA7FE04703F3AC = {
+			isa = PBXBuildFile;
+			fileRef = 8BBFB3B925F2699D92E3EE6C;
+		};
+		73ACB98C6211A878C1B92CCD = {
+			isa = PBXBuildFile;
+			fileRef = 02342775DE69FF57797EE19C;
+		};
+		59D2C1BCDE9BFC721A45FB8C = {
+			isa = PBXBuildFile;
+			fileRef = 345F13BEDFE2F4B2DE89906F;
+		};
+		717BE05999F58DF8E6897705 = {
+			isa = PBXBuildFile;
+			fileRef = B74673DBBF7B2A4298C79397;
+		};
+		C8EC0933DFAD50488625EE01 = {
+			isa = PBXBuildFile;
+			fileRef = 9E4E8A1B2952B8A61F2A001A;
+		};
+		5E4B2242FAC53D51D91FAC88 = {
+			isa = PBXBuildFile;
+			fileRef = 19A99699DA51CB2B0954C3A8;
+		};
+		4CA101D9C60676826DB46313 = {
+			isa = PBXBuildFile;
+			fileRef = 953411AF7630AE062FEB67EA;
+		};
+		230DE2AB8C8AA1FEA95D7FFF = {
+			isa = PBXBuildFile;
+			fileRef = 46AD578A32B96D9442E91D8A;
+		};
+		5800171324B945359DBF9D9A = {
+			isa = PBXBuildFile;
+			fileRef = 77E83F321DDFEF11ECB1C9A1;
+		};
+		B761959464ECFA57AFFF539B = {
+			isa = PBXBuildFile;
+			fileRef = EA087CA24AE18F180D4F5111;
+		};
+		FCA63D8DCCD541044BF44E48 = {
+			isa = PBXBuildFile;
+			fileRef = 4B37936EC685E2A6D1464177;
+		};
+		02342775DE69FF57797EE19C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "include_juce_audio_plugin_client_VST3.cpp";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		093DFBF812B09C8A5CEEE348 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = CoreMIDI.framework;
+			path = System/Library/Frameworks/CoreMIDI.framework;
+			sourceTree = SDKROOT;
+		};
+		0A6EABD96DB5B51026AD21D8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_plugin_client_AU_1.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		0BFCAFE5879077D60258E584 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = IOKit.framework;
+			path = System/Library/Frameworks/IOKit.framework;
+			sourceTree = SDKROOT;
+		};
+		19A99699DA51CB2B0954C3A8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_data_structures.mm";
+			path = "../../JuceLibraryCode/include_juce_data_structures.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		1B13DE65AD5442E18C3E32F6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = AudioUnit.framework;
+			path = System/Library/Frameworks/AudioUnit.framework;
+			sourceTree = SDKROOT;
+		};
+		1C541F9122D3E0631A26CCE5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Carbon.framework;
+			path = System/Library/Frameworks/Carbon.framework;
+			sourceTree = SDKROOT;
+		};
+		1C71F43C47F49793932EF45B = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = WebKit.framework;
+			path = System/Library/Frameworks/WebKit.framework;
+			sourceTree = SDKROOT;
+		};
+		2834F01D6C4C41490058E1C9 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = System/Library/Frameworks/Cocoa.framework;
+			sourceTree = SDKROOT;
+		};
+		2E717BE07EEAEC624D1F214E = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Accelerate.framework;
+			path = System/Library/Frameworks/Accelerate.framework;
+			sourceTree = SDKROOT;
+		};
+		345F13BEDFE2F4B2DE89906F = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_processors.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_processors.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		34E07CD02E5FB374368B6BBF = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_graphics";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_graphics";
+			sourceTree = "<absolute>";
+		};
+		389A21383C331D464406168E = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_basics";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_audio_basics";
+			sourceTree = "<absolute>";
+		};
+		3F0200821EBCD0DCEE21403E = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.nib;
+			name = RecentFilesMenuTemplate.nib;
+			path = RecentFilesMenuTemplate.nib;
+			sourceTree = "SOURCE_ROOT";
+		};
+		474E40B602CCD8D23ACB3652 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_formats.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_formats.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		4B37936EC685E2A6D1464177 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_gui_extra.mm";
+			path = "../../JuceLibraryCode/include_juce_gui_extra.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		55AEA5043EB1F87718B5D0E8 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = PluginEditor.h;
+			path = ../../Source/PluginEditor.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		56786F45F46D76970ED6562A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = PluginProcessor.cpp;
+			path = ../../Source/PluginProcessor.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		5B4EDAAD128C379CA80ECBC4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_basics.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_basics.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		64A69FA6465778F87FFBE8EF = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = "Viator_Compressor_Mac_Silicon.vst3";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		4249D77F1B3658B038EE3804 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = "Viator_Compressor_Mac_Silicon.component";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		46AD578A32B96D9442E91D8A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_events.mm";
+			path = "../../JuceLibraryCode/include_juce_events.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		5E429D4336A91A78F8DD0F3E = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Foundation.framework;
+			path = System/Library/Frameworks/Foundation.framework;
+			sourceTree = SDKROOT;
+		};
+		5E94136EBF0A8FA85F106234 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = JucePluginDefines.h;
+			path = ../../JuceLibraryCode/JucePluginDefines.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		62EAEEAFA112FC66CFD6FEE7 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = "Viator_Compressor_Mac_Silicon.app";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		65AC940CFF29EAC20304154D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_plugin_client_AU_2.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		6DED318F6101F2C2C0C96FF1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = "Info-VST3.plist";
+			path = "Info-VST3.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
+		6F7A78A6E2F093F5C15A03B1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_events";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_events";
+			sourceTree = "<absolute>";
+		};
+		70763BCE796619FC8DAB2AB6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = PluginProcessor.h;
+			path = ../../Source/PluginProcessor.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		74AB932368712C8C393AD718 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_formats";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_audio_formats";
+			sourceTree = "<absolute>";
+		};
+		77E83F321DDFEF11ECB1C9A1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_graphics.mm";
+			path = "../../JuceLibraryCode/include_juce_graphics.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		8325946D9496E28ECA1BEAB3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_dsp";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_dsp";
+			sourceTree = "<absolute>";
+		};
+		8BBFB3B925F2699D92E3EE6C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_plugin_client_VST_utils.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		8D0DB072A64732A47B0012FE = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = QuartzCore.framework;
+			path = System/Library/Frameworks/QuartzCore.framework;
+			sourceTree = SDKROOT;
+		};
+		953411AF7630AE062FEB67EA = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_dsp.mm";
+			path = "../../JuceLibraryCode/include_juce_dsp.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		9794436AD0574F1CD854CEA5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "include_juce_audio_plugin_client_Standalone.cpp";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		9DC398C37E6939861470FA6E = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = "Info-AU.plist";
+			path = "Info-AU.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
+		9E4E8A1B2952B8A61F2A001A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_core.mm";
+			path = "../../JuceLibraryCode/include_juce_core.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		A16F402504B1D88D625E023B = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_processors";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors";
+			sourceTree = "<absolute>";
+		};
+		A4773C9871D90AFD8415861D = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = CoreAudio.framework;
+			path = System/Library/Frameworks/CoreAudio.framework;
+			sourceTree = SDKROOT;
+		};
+		A690B1525E95B4797D83A80A = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_data_structures";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_data_structures";
+			sourceTree = "<absolute>";
+		};
+		B524433E611CB6704A5BB457 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_devices.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_devices.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		B74673DBBF7B2A4298C79397 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_audio_utils.mm";
+			path = "../../JuceLibraryCode/include_juce_audio_utils.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		BC5BE5112B8C6B24539ADAF6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_gui_extra";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_gui_extra";
+			sourceTree = "<absolute>";
+		};
+		BDD6F6692245C4F9C07EC999 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = CoreAudioKit.framework;
+			path = System/Library/Frameworks/CoreAudioKit.framework;
+			sourceTree = SDKROOT;
+		};
+		BDF7AE0DAC75058EBCDB5BBB = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = PluginEditor.cpp;
+			path = ../../Source/PluginEditor.cpp;
+			sourceTree = "SOURCE_ROOT";
+		};
+		C21D88F6AC317AD446192792 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = DiscRecording.framework;
+			path = System/Library/Frameworks/DiscRecording.framework;
+			sourceTree = SDKROOT;
+		};
+		D347F7AD9278C158A71F77F6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.r;
+			name = "include_juce_audio_plugin_client_AU.r";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r";
+			sourceTree = "SOURCE_ROOT";
+		};
+		D7043F2260826161FF57C84C = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = AudioToolbox.framework;
+			path = System/Library/Frameworks/AudioToolbox.framework;
+			sourceTree = SDKROOT;
+		};
+		D916A482E292166C6A9BDFE1 = {
+			isa = PBXFileReference;
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			path = "libViator_Compressor_Mac_Silicon.a";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		E54E9D6D51D12CAB9989FDCC = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_gui_basics";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_gui_basics";
+			sourceTree = "<absolute>";
+		};
+		EA087CA24AE18F180D4F5111 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.objcpp;
+			name = "include_juce_gui_basics.mm";
+			path = "../../JuceLibraryCode/include_juce_gui_basics.mm";
+			sourceTree = "SOURCE_ROOT";
+		};
+		EB159D2E7EE808CAD8E95647 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = JuceHeader.h;
+			path = ../../JuceLibraryCode/JuceHeader.h;
+			sourceTree = "SOURCE_ROOT";
+		};
+		EB6C1FE2D0E974F93AA0E99C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "include_juce_audio_plugin_client_utils.cpp";
+			path = "../../JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp";
+			sourceTree = "SOURCE_ROOT";
+		};
+		ED2BBF3A37B7CC46E428D356 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_plugin_client";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
+			sourceTree = "<absolute>";
+		};
+		EDFDBF69BBC58ADB5D123E6C = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_devices";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_audio_devices";
+			sourceTree = "<absolute>";
+		};
+		F2F7D2DA76036788995DA431 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			name = "Info-Standalone_Plugin.plist";
+			path = "Info-Standalone_Plugin.plist";
+			sourceTree = "SOURCE_ROOT";
+		};
+		F4F08AF46D5B15B454AEAC3B = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_core";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_core";
+			sourceTree = "<absolute>";
+		};
+		F61931744F34860FDF13FDF7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file;
+			name = "juce_audio_utils";
+			path = "/Users/land00m/Documents/JUCE/modules/juce_audio_utils";
+			sourceTree = "<absolute>";
+		};
+		3789B6F06A833814A1B5BF04 = {
 			isa = PBXGroup;
 			children = (
-				389A21383C331D464406168E /* juce_audio_basics */,
-				EDFDBF69BBC58ADB5D123E6C /* juce_audio_devices */,
-				74AB932368712C8C393AD718 /* juce_audio_formats */,
-				ED2BBF3A37B7CC46E428D356 /* juce_audio_plugin_client */,
-				A16F402504B1D88D625E023B /* juce_audio_processors */,
-				F61931744F34860FDF13FDF7 /* juce_audio_utils */,
-				F4F08AF46D5B15B454AEAC3B /* juce_core */,
-				A690B1525E95B4797D83A80A /* juce_data_structures */,
-				8325946D9496E28ECA1BEAB3 /* juce_dsp */,
-				6F7A78A6E2F093F5C15A03B1 /* juce_events */,
-				34E07CD02E5FB374368B6BBF /* juce_graphics */,
-				E54E9D6D51D12CAB9989FDCC /* juce_gui_basics */,
-				BC5BE5112B8C6B24539ADAF6 /* juce_gui_extra */,
+				56786F45F46D76970ED6562A,
+				70763BCE796619FC8DAB2AB6,
+				BDF7AE0DAC75058EBCDB5BBB,
+				55AEA5043EB1F87718B5D0E8,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		14956C1D44E49735BFBB449A = {
+			isa = PBXGroup;
+			children = (
+				3789B6F06A833814A1B5BF04,
+			);
+			name = "Viator_Compressor_Mac_Silicon";
+			sourceTree = "<group>";
+		};
+		00DC25A407D21F0BDBF110E6 = {
+			isa = PBXGroup;
+			children = (
+				389A21383C331D464406168E,
+				EDFDBF69BBC58ADB5D123E6C,
+				74AB932368712C8C393AD718,
+				ED2BBF3A37B7CC46E428D356,
+				A16F402504B1D88D625E023B,
+				F61931744F34860FDF13FDF7,
+				F4F08AF46D5B15B454AEAC3B,
+				A690B1525E95B4797D83A80A,
+				8325946D9496E28ECA1BEAB3,
+				6F7A78A6E2F093F5C15A03B1,
+				34E07CD02E5FB374368B6BBF,
+				E54E9D6D51D12CAB9989FDCC,
+				BC5BE5112B8C6B24539ADAF6,
 			);
 			name = "JUCE Modules";
 			sourceTree = "<group>";
 		};
-		14956C1D44E49735BFBB449A /* Viator_Compressor_Mac_Silicon */ = {
+		800BF0CAA8D3B0C7E9B97F03 = {
 			isa = PBXGroup;
 			children = (
-				3789B6F06A833814A1B5BF04 /* Source */,
-			);
-			name = Viator_Compressor_Mac_Silicon;
-			sourceTree = "<group>";
-		};
-		2530974ABF9BED5409C383C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1B13DE65AD5442E18C3E32F6 /* AudioUnit.framework */,
-				2E717BE07EEAEC624D1F214E /* Accelerate.framework */,
-				D7043F2260826161FF57C84C /* AudioToolbox.framework */,
-				1C541F9122D3E0631A26CCE5 /* Carbon.framework */,
-				2834F01D6C4C41490058E1C9 /* Cocoa.framework */,
-				A4773C9871D90AFD8415861D /* CoreAudio.framework */,
-				BDD6F6692245C4F9C07EC999 /* CoreAudioKit.framework */,
-				093DFBF812B09C8A5CEEE348 /* CoreMIDI.framework */,
-				C21D88F6AC317AD446192792 /* DiscRecording.framework */,
-				5E429D4336A91A78F8DD0F3E /* Foundation.framework */,
-				0BFCAFE5879077D60258E584 /* IOKit.framework */,
-				8D0DB072A64732A47B0012FE /* QuartzCore.framework */,
-				1C71F43C47F49793932EF45B /* WebKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2C2BCA93EB4A9D99D5B81B59 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				14956C1D44E49735BFBB449A /* Viator_Compressor_Mac_Silicon */,
-				00DC25A407D21F0BDBF110E6 /* JUCE Modules */,
-				800BF0CAA8D3B0C7E9B97F03 /* JUCE Library Code */,
-				AA20E3A00BF36D5999796F62 /* Resources */,
-				2530974ABF9BED5409C383C7 /* Frameworks */,
-				B492F1D23A1B7E26DC474AC9 /* Products */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		3789B6F06A833814A1B5BF04 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				56786F45F46D76970ED6562A /* PluginProcessor.cpp */,
-				70763BCE796619FC8DAB2AB6 /* PluginProcessor.h */,
-				BDF7AE0DAC75058EBCDB5BBB /* PluginEditor.cpp */,
-				55AEA5043EB1F87718B5D0E8 /* PluginEditor.h */,
-			);
-			name = Source;
-			sourceTree = "<group>";
-		};
-		800BF0CAA8D3B0C7E9B97F03 /* JUCE Library Code */ = {
-			isa = PBXGroup;
-			children = (
-				5B4EDAAD128C379CA80ECBC4 /* include_juce_audio_basics.mm */,
-				B524433E611CB6704A5BB457 /* include_juce_audio_devices.mm */,
-				474E40B602CCD8D23ACB3652 /* include_juce_audio_formats.mm */,
-				D347F7AD9278C158A71F77F6 /* include_juce_audio_plugin_client_AU.r */,
-				0A6EABD96DB5B51026AD21D8 /* include_juce_audio_plugin_client_AU_1.mm */,
-				65AC940CFF29EAC20304154D /* include_juce_audio_plugin_client_AU_2.mm */,
-				9794436AD0574F1CD854CEA5 /* include_juce_audio_plugin_client_Standalone.cpp */,
-				EB6C1FE2D0E974F93AA0E99C /* include_juce_audio_plugin_client_utils.cpp */,
-				8BBFB3B925F2699D92E3EE6C /* include_juce_audio_plugin_client_VST_utils.mm */,
-				02342775DE69FF57797EE19C /* include_juce_audio_plugin_client_VST3.cpp */,
-				345F13BEDFE2F4B2DE89906F /* include_juce_audio_processors.mm */,
-				B74673DBBF7B2A4298C79397 /* include_juce_audio_utils.mm */,
-				9E4E8A1B2952B8A61F2A001A /* include_juce_core.mm */,
-				19A99699DA51CB2B0954C3A8 /* include_juce_data_structures.mm */,
-				953411AF7630AE062FEB67EA /* include_juce_dsp.mm */,
-				46AD578A32B96D9442E91D8A /* include_juce_events.mm */,
-				77E83F321DDFEF11ECB1C9A1 /* include_juce_graphics.mm */,
-				EA087CA24AE18F180D4F5111 /* include_juce_gui_basics.mm */,
-				4B37936EC685E2A6D1464177 /* include_juce_gui_extra.mm */,
-				EB159D2E7EE808CAD8E95647 /* JuceHeader.h */,
-				5E94136EBF0A8FA85F106234 /* JucePluginDefines.h */,
+				5B4EDAAD128C379CA80ECBC4,
+				B524433E611CB6704A5BB457,
+				474E40B602CCD8D23ACB3652,
+				D347F7AD9278C158A71F77F6,
+				0A6EABD96DB5B51026AD21D8,
+				65AC940CFF29EAC20304154D,
+				9794436AD0574F1CD854CEA5,
+				EB6C1FE2D0E974F93AA0E99C,
+				8BBFB3B925F2699D92E3EE6C,
+				02342775DE69FF57797EE19C,
+				345F13BEDFE2F4B2DE89906F,
+				B74673DBBF7B2A4298C79397,
+				9E4E8A1B2952B8A61F2A001A,
+				19A99699DA51CB2B0954C3A8,
+				953411AF7630AE062FEB67EA,
+				46AD578A32B96D9442E91D8A,
+				77E83F321DDFEF11ECB1C9A1,
+				EA087CA24AE18F180D4F5111,
+				4B37936EC685E2A6D1464177,
+				EB159D2E7EE808CAD8E95647,
+				5E94136EBF0A8FA85F106234,
 			);
 			name = "JUCE Library Code";
 			sourceTree = "<group>";
 		};
-		AA20E3A00BF36D5999796F62 /* Resources */ = {
+		AA20E3A00BF36D5999796F62 = {
 			isa = PBXGroup;
 			children = (
-				6DED318F6101F2C2C0C96FF1 /* Info-VST3.plist */,
-				9DC398C37E6939861470FA6E /* Info-AU.plist */,
-				F2F7D2DA76036788995DA431 /* Info-Standalone_Plugin.plist */,
-				3F0200821EBCD0DCEE21403E /* RecentFilesMenuTemplate.nib */,
+				6DED318F6101F2C2C0C96FF1,
+				9DC398C37E6939861470FA6E,
+				F2F7D2DA76036788995DA431,
+				3F0200821EBCD0DCEE21403E,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B492F1D23A1B7E26DC474AC9 /* Products */ = {
+		2530974ABF9BED5409C383C7 = {
 			isa = PBXGroup;
 			children = (
-				64A69FA6465778F87FFBE8EF /* Viator_Compressor_Mac_Silicon.vst3 */,
-				4249D77F1B3658B038EE3804 /* Viator_Compressor_Mac_Silicon.component */,
-				62EAEEAFA112FC66CFD6FEE7 /* Viator_Compressor_Mac_Silicon.app */,
-				D916A482E292166C6A9BDFE1 /* libViator_Compressor_Mac_Silicon.a */,
+				1B13DE65AD5442E18C3E32F6,
+				2E717BE07EEAEC624D1F214E,
+				D7043F2260826161FF57C84C,
+				1C541F9122D3E0631A26CCE5,
+				2834F01D6C4C41490058E1C9,
+				A4773C9871D90AFD8415861D,
+				BDD6F6692245C4F9C07EC999,
+				093DFBF812B09C8A5CEEE348,
+				C21D88F6AC317AD446192792,
+				5E429D4336A91A78F8DD0F3E,
+				0BFCAFE5879077D60258E584,
+				8D0DB072A64732A47B0012FE,
+				1C71F43C47F49793932EF45B,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B492F1D23A1B7E26DC474AC9 = {
+			isa = PBXGroup;
+			children = (
+				64A69FA6465778F87FFBE8EF,
+				4249D77F1B3658B038EE3804,
+				62EAEEAFA112FC66CFD6FEE7,
+				D916A482E292166C6A9BDFE1,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		018E0ED45A3C51360ABC6EBD /* Viator_Compressor_Mac_Silicon - Shared Code */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3A531C825875B6E089E3A234 /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - Shared Code" */;
-			buildPhases = (
-				91E571AAD99A9AE78161AF61 /* Sources */,
+		2C2BCA93EB4A9D99D5B81B59 = {
+			isa = PBXGroup;
+			children = (
+				14956C1D44E49735BFBB449A,
+				00DC25A407D21F0BDBF110E6,
+				800BF0CAA8D3B0C7E9B97F03,
+				AA20E3A00BF36D5999796F62,
+				2530974ABF9BED5409C383C7,
+				B492F1D23A1B7E26DC474AC9,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Viator_Compressor_Mac_Silicon - Shared Code";
-			productName = Viator_Compressor_Mac_Silicon;
-			productReference = D916A482E292166C6A9BDFE1 /* libViator_Compressor_Mac_Silicon.a */;
-			productType = "com.apple.product-type.library.static";
+			name = Source;
+			sourceTree = "<group>";
 		};
-		1B6E55F0B345F14D07AAE50E /* Viator_Compressor_Mac_Silicon - VST3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA1825DE1BF30F1E8B86A49A /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - VST3" */;
-			buildPhases = (
-				BCB57F2A8C071CBBD92BC62E /* Resources */,
-				244A4941D95FD9E9E3C80316 /* Sources */,
-				F79B49282A8CFC6360DF0609 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F0E494371EEFBD24239B42C6 /* PBXTargetDependency */,
-			);
-			name = "Viator_Compressor_Mac_Silicon - VST3";
-			productName = Viator_Compressor_Mac_Silicon;
-			productReference = 64A69FA6465778F87FFBE8EF /* Viator_Compressor_Mac_Silicon.vst3 */;
-			productType = "com.apple.product-type.bundle";
+		AC88A4663ED1AEDBCA2D0F0A = {
+			isa = PBXTargetDependency;
+			target = 1B6E55F0B345F14D07AAE50E;
 		};
-		EFA4F56F3F495CFF93E652BD /* Viator_Compressor_Mac_Silicon - AU */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0C874297B932EC8D60B585C /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - AU" */;
-			buildPhases = (
-				145EB8ADDDF532B3FA8080EE /* Resources */,
-				EFBEBDC614D698E1AB8B974D /* Rez */,
-				FAF3DE20C45F2007E10EEA3A /* Sources */,
-				332AF9024492CE45E4BB8D33 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C002297D0157900746C070F1 /* PBXTargetDependency */,
-			);
-			name = "Viator_Compressor_Mac_Silicon - AU";
-			productName = Viator_Compressor_Mac_Silicon;
-			productReference = 4249D77F1B3658B038EE3804 /* Viator_Compressor_Mac_Silicon.component */;
-			productType = "com.apple.product-type.bundle";
+		7DEBF4A03811F5A70256AE49 = {
+			isa = PBXTargetDependency;
+			target = EFA4F56F3F495CFF93E652BD;
 		};
-		F6F89E3EFE6CC3C3EC7B2F68 /* Viator_Compressor_Mac_Silicon - Standalone Plugin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B937FF0F81FE669670FA2B8D /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - Standalone Plugin" */;
-			buildPhases = (
-				DDF7CB6588445AFF95D1317D /* Resources */,
-				749C18E1A854624A00EE98B1 /* Sources */,
-				2EFE001726E0D096FF7725CC /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22A136323E0709F1D988F6DF /* PBXTargetDependency */,
-			);
-			name = "Viator_Compressor_Mac_Silicon - Standalone Plugin";
-			productName = Viator_Compressor_Mac_Silicon;
-			productReference = 62EAEEAFA112FC66CFD6FEE7 /* Viator_Compressor_Mac_Silicon.app */;
-			productType = "com.apple.product-type.application";
+		16EFA99A648EAC2F76CE75B4 = {
+			isa = PBXTargetDependency;
+			target = F6F89E3EFE6CC3C3EC7B2F68;
 		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		811EC5BE349A34F08149DF66 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = "Viator DSP";
-				TargetAttributes = {
-					018E0ED45A3C51360ABC6EBD = {
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 0;
-							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
-							com.apple.InterAppAudio = {
-								enabled = 0;
-							};
-							com.apple.Push = {
-								enabled = 0;
-							};
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-					1B6E55F0B345F14D07AAE50E = {
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 0;
-							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
-							com.apple.InterAppAudio = {
-								enabled = 0;
-							};
-							com.apple.Push = {
-								enabled = 0;
-							};
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-					3C7AD46FF0100DE562FEB05D = {
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 0;
-							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
-							com.apple.InterAppAudio = {
-								enabled = 0;
-							};
-							com.apple.Push = {
-								enabled = 0;
-							};
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-					EFA4F56F3F495CFF93E652BD = {
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 0;
-							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
-							com.apple.InterAppAudio = {
-								enabled = 0;
-							};
-							com.apple.Push = {
-								enabled = 0;
-							};
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-					F6F89E3EFE6CC3C3EC7B2F68 = {
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 0;
-							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
-							com.apple.InterAppAudio = {
-								enabled = 0;
-							};
-							com.apple.Push = {
-								enabled = 0;
-							};
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-				};
+		B6BC27617BF1BB0C9F6F0704 = {
+			isa = PBXTargetDependency;
+			target = 018E0ED45A3C51360ABC6EBD;
+		};
+		F0E494371EEFBD24239B42C6 = {
+			isa = PBXTargetDependency;
+			target = 018E0ED45A3C51360ABC6EBD;
+		};
+		C002297D0157900746C070F1 = {
+			isa = PBXTargetDependency;
+			target = 018E0ED45A3C51360ABC6EBD;
+		};
+		22A136323E0709F1D988F6DF = {
+			isa = PBXTargetDependency;
+			target = 018E0ED45A3C51360ABC6EBD;
+		};
+		20AF1245EF430B4D54D37E04 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
 			};
-			buildConfigurationList = 71B87E387318E0D5B1C839ED /* Build configuration list for PBXProject "Viator_Compressor_Mac_Silicon" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 2C2BCA93EB4A9D99D5B81B59 /* Source */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3C7AD46FF0100DE562FEB05D /* Viator_Compressor_Mac_Silicon - All */,
-				1B6E55F0B345F14D07AAE50E /* Viator_Compressor_Mac_Silicon - VST3 */,
-				EFA4F56F3F495CFF93E652BD /* Viator_Compressor_Mac_Silicon - AU */,
-				F6F89E3EFE6CC3C3EC7B2F68 /* Viator_Compressor_Mac_Silicon - Standalone Plugin */,
-				018E0ED45A3C51360ABC6EBD /* Viator_Compressor_Mac_Silicon - Shared Code */,
-			);
+			name = Debug;
 		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		145EB8ADDDF532B3FA8080EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				284FF555258BE5CA00CCC19D /* RecentFilesMenuTemplate.nib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		DB4DA10FD03247A51862B76C = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
 		};
-		BCB57F2A8C071CBBD92BC62E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				310F6288F086CD55DD360A61 /* RecentFilesMenuTemplate.nib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		A9B2E1355B6019FB7DE5DCA4 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				OTHER_LDFLAGS = "-bundle -lViator_Compressor_Mac_Silicon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
 		};
-		DDF7CB6588445AFF95D1317D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				284FF562258BE5CA00CCC19D /* RecentFilesMenuTemplate.nib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		91A44CFFF2BA45EB8738DD9C = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				OTHER_LDFLAGS = "-bundle -lViator_Compressor_Mac_Silicon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Release;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		EFBEBDC614D698E1AB8B974D /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				370283CE4756E2847D6BCB6B /* include_juce_audio_plugin_client_AU.r in Rez */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		6E3C84C6F9D03E73CAF2AA24 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				OTHER_LDFLAGS = "-bundle -lViator_Compressor_Mac_Silicon";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
 		};
-/* End PBXRezBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		244A4941D95FD9E9E3C80316 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73ACB98C6211A878C1B92CCD /* include_juce_audio_plugin_client_VST3.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+		91B71B719F8B168D685732D8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				OTHER_LDFLAGS = "-bundle -lViator_Compressor_Mac_Silicon";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
 		};
-		749C18E1A854624A00EE98B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				955B8AFB65B6DB74C004FE85 /* include_juce_audio_plugin_client_Standalone.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		91E571AAD99A9AE78161AF61 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7732F1A207CF6B7BF972359D /* PluginProcessor.cpp in Sources */,
-				720D3C0DA291C1D71573D102 /* PluginEditor.cpp in Sources */,
-				8FC44F44645E87B5099B7544 /* include_juce_audio_basics.mm in Sources */,
-				3B3260E74EA2CEA145B959A5 /* include_juce_audio_devices.mm in Sources */,
-				E96D7E67006EA275B0F06685 /* include_juce_audio_formats.mm in Sources */,
-				D6584E9DB7E5B9EBAD4F30A6 /* include_juce_audio_plugin_client_utils.cpp in Sources */,
-				74F0A55660CA7FE04703F3AC /* include_juce_audio_plugin_client_VST_utils.mm in Sources */,
-				59D2C1BCDE9BFC721A45FB8C /* include_juce_audio_processors.mm in Sources */,
-				717BE05999F58DF8E6897705 /* include_juce_audio_utils.mm in Sources */,
-				C8EC0933DFAD50488625EE01 /* include_juce_core.mm in Sources */,
-				5E4B2242FAC53D51D91FAC88 /* include_juce_data_structures.mm in Sources */,
-				4CA101D9C60676826DB46313 /* include_juce_dsp.mm in Sources */,
-				230DE2AB8C8AA1FEA95D7FFF /* include_juce_events.mm in Sources */,
-				5800171324B945359DBF9D9A /* include_juce_graphics.mm in Sources */,
-				B761959464ECFA57AFFF539B /* include_juce_gui_basics.mm in Sources */,
-				FCA63D8DCCD541044BF44E48 /* include_juce_gui_extra.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAF3DE20C45F2007E10EEA3A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28D5261800C82565DE7B2EA5 /* include_juce_audio_plugin_client_AU_1.mm in Sources */,
-				F43012ECFF938D721D626ED5 /* include_juce_audio_plugin_client_AU_2.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		16EFA99A648EAC2F76CE75B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F6F89E3EFE6CC3C3EC7B2F68 /* Viator_Compressor_Mac_Silicon - Standalone Plugin */;
-			targetProxy = 284FF574258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-		22A136323E0709F1D988F6DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 018E0ED45A3C51360ABC6EBD /* Viator_Compressor_Mac_Silicon - Shared Code */;
-			targetProxy = 284FF571258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-		7DEBF4A03811F5A70256AE49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EFA4F56F3F495CFF93E652BD /* Viator_Compressor_Mac_Silicon - AU */;
-			targetProxy = 284FF573258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-		AC88A4663ED1AEDBCA2D0F0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1B6E55F0B345F14D07AAE50E /* Viator_Compressor_Mac_Silicon - VST3 */;
-			targetProxy = 284FF572258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-		B6BC27617BF1BB0C9F6F0704 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 018E0ED45A3C51360ABC6EBD /* Viator_Compressor_Mac_Silicon - Shared Code */;
-			targetProxy = 284FF575258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-		C002297D0157900746C070F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 018E0ED45A3C51360ABC6EBD /* Viator_Compressor_Mac_Silicon - Shared Code */;
-			targetProxy = 284FF56F258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-		F0E494371EEFBD24239B42C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 018E0ED45A3C51360ABC6EBD /* Viator_Compressor_Mac_Silicon - Shared Code */;
-			targetProxy = 284FF570258BE5CA00CCC19D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		1881762B2182A5D74B85D139 /* Debug */ = {
+		1881762B2182A5D74B85D139 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
@@ -818,25 +1310,371 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Info-Standalone_Plugin.plist";
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
 				INFOPLIST_PREPROCESS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
 				OTHER_LDFLAGS = "-lViator_Compressor_Mac_Silicon";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 			};
 			name = Debug;
 		};
-		1F581BFF8A77C31591C72174 /* Debug */ = {
+		9EC84CE89F150D2433C9F623 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
+				INFOPLIST_PREPROCESS = NO;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				OTHER_LDFLAGS = "-lViator_Compressor_Mac_Silicon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		5165F6BA27A33A9CD807F70C = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		466F0D0F62319F11C8122736 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x60005",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_RTAS=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
+					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
+					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x56327478",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_RTASCategory=0",
+					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
+					"JucePlugin_RTASDisableBypass=0",
+					"JucePlugin_RTASDisableMultiMono=0",
+					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_HEADER_SEARCH_PATHS = (
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"../../JuceLibraryCode",
+					"/Users/land00m/Documents/JUCE/modules",
+					"/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		1F581BFF8A77C31591C72174 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -878,704 +1716,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
 			};
 			name = Debug;
 		};
-		20AF1245EF430B4D54D37E04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_NAME = "Agro Compressor";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		466F0D0F62319F11C8122736 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				DEAD_CODE_STRIPPING = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_NDEBUG=1",
-					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=1",
-					"JucePlugin_Build_AU=1",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=1",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-					"JUCE_SHARED_CODE=1",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				SKIP_INSTALL = YES;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-			};
-			name = Release;
-		};
-		5165F6BA27A33A9CD807F70C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_DEBUG=1",
-					"DEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=1",
-					"JucePlugin_Build_AU=1",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=1",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-					"JUCE_SHARED_CODE=1",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				SKIP_INSTALL = YES;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-			};
-			name = Debug;
-		};
-		6E3C84C6F9D03E73CAF2AA24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_DEBUG=1",
-					"DEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=0",
-					"JucePlugin_Build_AU=1",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=0",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GENERATE_PKGINFO_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Info-AU.plist";
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
-				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-lViator_Compressor_Mac_Silicon",
-				);
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-				WRAPPER_EXTENSION = component;
-			};
-			name = Debug;
-		};
-		91A44CFFF2BA45EB8738DD9C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				DEAD_CODE_STRIPPING = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_NDEBUG=1",
-					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=1",
-					"JucePlugin_Build_AU=0",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=0",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GENERATE_PKGINFO_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Info-VST3.plist";
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
-				LIBRARY_STYLE = Bundle;
-				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-lViator_Compressor_Mac_Silicon",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-				WRAPPER_EXTENSION = vst3;
-			};
-			name = Release;
-		};
-		91B71B719F8B168D685732D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				DEAD_CODE_STRIPPING = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_NDEBUG=1",
-					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=0",
-					"JucePlugin_Build_AU=1",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=0",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GENERATE_PKGINFO_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Info-AU.plist";
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
-				LIBRARY_STYLE = Bundle;
-				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-lViator_Compressor_Mac_Silicon",
-				);
-				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-				WRAPPER_EXTENSION = component;
-			};
-			name = Release;
-		};
-		9EC84CE89F150D2433C9F623 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				DEAD_CODE_STRIPPING = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_NDEBUG=1",
-					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=0",
-					"JucePlugin_Build_AU=0",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=1",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Info-Standalone_Plugin.plist";
-				INFOPLIST_PREPROCESS = NO;
-				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = "-lViator_Compressor_Mac_Silicon";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-			};
-			name = Release;
-		};
-		A5EFCC23295AEB8F973F374B /* Release */ = {
+		A5EFCC23295AEB8F973F374B = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1616,196 +1764,296 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
+				PRODUCT_NAME = "Viator_Compressor_Mac_Silicon";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
-		A9B2E1355B6019FB7DE5DCA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				COPY_PHASE_STRIP = NO;
-				DEPLOYMENT_LOCATION = YES;
-				DSTROOT = /;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_DEBUG=1",
-					"DEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60005",
-					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
-					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
-					"JUCE_MODULE_AVAILABLE_juce_core=1",
-					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
-					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
-					"JUCE_MODULE_AVAILABLE_juce_events=1",
-					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
-					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
-					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
-					"JUCE_VST3_CAN_REPLACE_VST2=0",
-					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
-					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=1",
-					"JucePlugin_Build_AU=0",
-					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
-					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=0",
-					"JucePlugin_Build_Unity=0",
-					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"Agro\\ Compressor\\\"",
-					"JucePlugin_Desc=\\\"Aggressive\\ compressor\\\"",
-					"JucePlugin_Manufacturer=\\\"Viator\\ DSP\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
-					"JucePlugin_ManufacturerEmail=\\\"\\\"",
-					"JucePlugin_ManufacturerCode=0x4d616e75",
-					"JucePlugin_PluginCode=0x56327478",
-					"JucePlugin_IsSynth=0",
-					"JucePlugin_WantsMidiInput=0",
-					"JucePlugin_ProducesMidiOutput=0",
-					"JucePlugin_IsMidiEffect=0",
-					"JucePlugin_EditorRequiresKeyboardFocus=0",
-					"JucePlugin_Version=1.0.0",
-					"JucePlugin_VersionCode=0x10000",
-					"JucePlugin_VersionString=\\\"1.0.0\\\"",
-					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
-					"JucePlugin_VSTCategory=kPlugCategEffect",
-					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
-					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=Viator_Compressor_Mac_SiliconAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"Viator_Compressor_Mac_SiliconAU\\\"",
-					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.ViatorDSP.Viator_Compressor_Mac_Silicon",
-					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
-					"JucePlugin_AAXCategory=0",
-					"JucePlugin_AAXDisableBypass=0",
-					"JucePlugin_AAXDisableMultiMono=0",
-					"JucePlugin_IAAType=0x61757278",
-					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"Viator\\ DSP:\\ Agro\\ Compressor\\\"",
-					"JucePlugin_VSTNumMidiInputs=16",
-					"JucePlugin_VSTNumMidiOutputs=16",
-					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
-					"JUCER_XCODE_MAC_F6D2F4CF=1",
-					"JUCE_APP_VERSION=1.0.0",
-					"JUCE_APP_VERSION_HEX=0x10000",
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GENERATE_PKGINFO_FILE = YES;
-				HEADER_SEARCH_PATHS = (
-					/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,
-					../../JuceLibraryCode,
-					/Users/land00m/Documents/JUCE/modules,
-					/Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client,
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Info-VST3.plist";
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
-				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "/Users/land00m/Documents/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Users/land00m/Documents/JUCE/modules /Users/land00m/Documents/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-lViator_Compressor_Mac_Silicon",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ViatorDSP.Viator_Compressor_Mac_Silicon;
-				PRODUCT_NAME = Viator_Compressor_Mac_Silicon;
-				USE_HEADERMAP = NO;
-				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
-				WRAPPER_EXTENSION = vst3;
-			};
-			name = Debug;
-		};
-		DB4DA10FD03247A51862B76C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3A531C825875B6E089E3A234 /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - Shared Code" */ = {
+		71B87E387318E0D5B1C839ED = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5165F6BA27A33A9CD807F70C /* Debug */,
-				466F0D0F62319F11C8122736 /* Release */,
+				1F581BFF8A77C31591C72174,
+				A5EFCC23295AEB8F973F374B,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		71B87E387318E0D5B1C839ED /* Build configuration list for PBXProject "Viator_Compressor_Mac_Silicon" */ = {
+		FE41601ADD40B8283E6C245B = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F581BFF8A77C31591C72174 /* Debug */,
-				A5EFCC23295AEB8F973F374B /* Release */,
+				20AF1245EF430B4D54D37E04,
+				DB4DA10FD03247A51862B76C,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A0C874297B932EC8D60B585C /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - AU" */ = {
+		3C7AD46FF0100DE562FEB05D = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FE41601ADD40B8283E6C245B;
+			buildPhases = ( );
+			buildRules = ( );
+			dependencies = (
+				AC88A4663ED1AEDBCA2D0F0A,
+				7DEBF4A03811F5A70256AE49,
+				16EFA99A648EAC2F76CE75B4,
+				B6BC27617BF1BB0C9F6F0704,
+			);
+			name = "Viator_Compressor_Mac_Silicon - All";
+			productName = "Viator_Compressor_Mac_Silicon";
+		};
+		CA1825DE1BF30F1E8B86A49A = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E3C84C6F9D03E73CAF2AA24 /* Debug */,
-				91B71B719F8B168D685732D8 /* Release */,
+				A9B2E1355B6019FB7DE5DCA4,
+				91A44CFFF2BA45EB8738DD9C,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		B937FF0F81FE669670FA2B8D /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - Standalone Plugin" */ = {
+		BCB57F2A8C071CBBD92BC62E = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310F6288F086CD55DD360A61,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244A4941D95FD9E9E3C80316 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73ACB98C6211A878C1B92CCD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79B49282A8CFC6360DF0609 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB69F355147A1F059DE566E,
+				33557A05D3C110268990127F,
+				D337B4869BFF70D1C15553A5,
+				58F272AACACC4200185D2E69,
+				9FD538AF3788EC598349BE56,
+				E736356DFDE87D60293AE564,
+				5385CD2A625A829E1841DCCD,
+				6E76EA1C0A138601A9DCC936,
+				E97C597B622EDD0B30388B86,
+				12497B5F59EAF9EDECA2A3B4,
+				1331EBB707164D563D089106,
+				3ACD48456E0598F05CB2CC91,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6E55F0B345F14D07AAE50E = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1825DE1BF30F1E8B86A49A;
+			buildPhases = (
+				BCB57F2A8C071CBBD92BC62E,
+				244A4941D95FD9E9E3C80316,
+				F79B49282A8CFC6360DF0609,
+			);
+			buildRules = ( );
+			dependencies = (
+				F0E494371EEFBD24239B42C6,
+			);
+			name = "Viator_Compressor_Mac_Silicon - VST3";
+			productName = "Viator_Compressor_Mac_Silicon";
+			productReference = 64A69FA6465778F87FFBE8EF;
+			productType = "com.apple.product-type.bundle";
+		};
+		A0C874297B932EC8D60B585C = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1881762B2182A5D74B85D139 /* Debug */,
-				9EC84CE89F150D2433C9F623 /* Release */,
+				6E3C84C6F9D03E73CAF2AA24,
+				91B71B719F8B168D685732D8,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CA1825DE1BF30F1E8B86A49A /* Build configuration list for PBXNativeTarget "Viator_Compressor_Mac_Silicon - VST3" */ = {
+		145EB8ADDDF532B3FA8080EE = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310F6288F086CD55DD360A61,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBEBDC614D698E1AB8B974D = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370283CE4756E2847D6BCB6B,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF3DE20C45F2007E10EEA3A = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D5261800C82565DE7B2EA5,
+				F43012ECFF938D721D626ED5,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332AF9024492CE45E4BB8D33 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7204784A021849569BB7C8,
+				ACB69F355147A1F059DE566E,
+				33557A05D3C110268990127F,
+				D337B4869BFF70D1C15553A5,
+				58F272AACACC4200185D2E69,
+				9FD538AF3788EC598349BE56,
+				E736356DFDE87D60293AE564,
+				5385CD2A625A829E1841DCCD,
+				6E76EA1C0A138601A9DCC936,
+				E97C597B622EDD0B30388B86,
+				12497B5F59EAF9EDECA2A3B4,
+				1331EBB707164D563D089106,
+				3ACD48456E0598F05CB2CC91,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA4F56F3F495CFF93E652BD = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C874297B932EC8D60B585C;
+			buildPhases = (
+				145EB8ADDDF532B3FA8080EE,
+				EFBEBDC614D698E1AB8B974D,
+				FAF3DE20C45F2007E10EEA3A,
+				332AF9024492CE45E4BB8D33,
+			);
+			buildRules = ( );
+			dependencies = (
+				C002297D0157900746C070F1,
+			);
+			name = "Viator_Compressor_Mac_Silicon - AU";
+			productName = "Viator_Compressor_Mac_Silicon";
+			productReference = 4249D77F1B3658B038EE3804;
+			productType = "com.apple.product-type.bundle";
+		};
+		B937FF0F81FE669670FA2B8D = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9B2E1355B6019FB7DE5DCA4 /* Debug */,
-				91A44CFFF2BA45EB8738DD9C /* Release */,
+				1881762B2182A5D74B85D139,
+				9EC84CE89F150D2433C9F623,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		FE41601ADD40B8283E6C245B /* Build configuration list for PBXAggregateTarget "Viator_Compressor_Mac_Silicon - All" */ = {
+		DDF7CB6588445AFF95D1317D = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310F6288F086CD55DD360A61,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749C18E1A854624A00EE98B1 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955B8AFB65B6DB74C004FE85,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EFE001726E0D096FF7725CC = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB69F355147A1F059DE566E,
+				33557A05D3C110268990127F,
+				D337B4869BFF70D1C15553A5,
+				58F272AACACC4200185D2E69,
+				9FD538AF3788EC598349BE56,
+				E736356DFDE87D60293AE564,
+				5385CD2A625A829E1841DCCD,
+				6E76EA1C0A138601A9DCC936,
+				E97C597B622EDD0B30388B86,
+				12497B5F59EAF9EDECA2A3B4,
+				1331EBB707164D563D089106,
+				3ACD48456E0598F05CB2CC91,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F89E3EFE6CC3C3EC7B2F68 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B937FF0F81FE669670FA2B8D;
+			buildPhases = (
+				DDF7CB6588445AFF95D1317D,
+				749C18E1A854624A00EE98B1,
+				2EFE001726E0D096FF7725CC,
+			);
+			buildRules = ( );
+			dependencies = (
+				22A136323E0709F1D988F6DF,
+			);
+			name = "Viator_Compressor_Mac_Silicon - Standalone Plugin";
+			productName = "Viator_Compressor_Mac_Silicon";
+			productReference = 62EAEEAFA112FC66CFD6FEE7;
+			productType = "com.apple.product-type.application";
+		};
+		3A531C825875B6E089E3A234 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				20AF1245EF430B4D54D37E04 /* Debug */,
-				DB4DA10FD03247A51862B76C /* Release */,
+				5165F6BA27A33A9CD807F70C,
+				466F0D0F62319F11C8122736,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-/* End XCConfigurationList section */
+		91E571AAD99A9AE78161AF61 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7732F1A207CF6B7BF972359D,
+				720D3C0DA291C1D71573D102,
+				8FC44F44645E87B5099B7544,
+				3B3260E74EA2CEA145B959A5,
+				E96D7E67006EA275B0F06685,
+				D6584E9DB7E5B9EBAD4F30A6,
+				74F0A55660CA7FE04703F3AC,
+				59D2C1BCDE9BFC721A45FB8C,
+				717BE05999F58DF8E6897705,
+				C8EC0933DFAD50488625EE01,
+				5E4B2242FAC53D51D91FAC88,
+				4CA101D9C60676826DB46313,
+				230DE2AB8C8AA1FEA95D7FFF,
+				5800171324B945359DBF9D9A,
+				B761959464ECFA57AFFF539B,
+				FCA63D8DCCD541044BF44E48,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018E0ED45A3C51360ABC6EBD = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A531C825875B6E089E3A234;
+			buildPhases = (
+				91E571AAD99A9AE78161AF61,
+			);
+			buildRules = ( );
+			dependencies = ( );
+			name = "Viator_Compressor_Mac_Silicon - Shared Code";
+			productName = "Viator_Compressor_Mac_Silicon";
+			productReference = D916A482E292166C6A9BDFE1;
+			productType = "com.apple.product-type.library.static";
+		};
+		811EC5BE349A34F08149DF66 = {
+			isa = PBXProject;
+			buildConfigurationList = 71B87E387318E0D5B1C839ED;
+			attributes = { LastUpgradeCheck = 1200; ORGANIZATIONNAME = "Viator DSP"; TargetAttributes = { 3C7AD46FF0100DE562FEB05D = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };1B6E55F0B345F14D07AAE50E = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };EFA4F56F3F495CFF93E652BD = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };F6F89E3EFE6CC3C3EC7B2F68 = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; };018E0ED45A3C51360ABC6EBD = { SystemCapabilities = {com.apple.ApplicationGroups.iOS = { enabled = 0; }; com.apple.InAppPurchase = { enabled = 0; }; com.apple.InterAppAudio = { enabled = 0; }; com.apple.Push = { enabled = 0; }; com.apple.Sandbox = { enabled = 0; }; com.apple.HardenedRuntime = { enabled = 0; }; }; }; }; };
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 2C2BCA93EB4A9D99D5B81B59;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (3C7AD46FF0100DE562FEB05D, 1B6E55F0B345F14D07AAE50E, EFA4F56F3F495CFF93E652BD, F6F89E3EFE6CC3C3EC7B2F68, 018E0ED45A3C51360ABC6EBD);
+			knownRegions = (en, Base);
+		};
 	};
-	rootObject = 811EC5BE349A34F08149DF66 /* Project object */;
+	rootObject = 811EC5BE349A34F08149DF66;
 }

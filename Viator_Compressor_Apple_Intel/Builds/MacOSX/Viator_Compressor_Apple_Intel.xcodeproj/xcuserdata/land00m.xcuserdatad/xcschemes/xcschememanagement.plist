@@ -4,30 +4,30 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Viator_Compressor_Mac_Silicon - AU.xcscheme_^#shared#^_</key>
+		<key>Viator_Compressor_Apple_Intel - AU.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Viator_Compressor_Mac_Silicon - All.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Viator_Compressor_Mac_Silicon - Shared Code.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>Viator_Compressor_Mac_Silicon - Standalone Plugin.xcscheme_^#shared#^_</key>
+		<key>Viator_Compressor_Apple_Intel - All.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>Viator_Compressor_Mac_Silicon - VST3.xcscheme_^#shared#^_</key>
+		<key>Viator_Compressor_Apple_Intel - Shared Code.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>Viator_Compressor_Apple_Intel - Standalone Plugin.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>Viator_Compressor_Apple_Intel - VST3.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 </dict>
