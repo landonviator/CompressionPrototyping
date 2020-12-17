@@ -8,10 +8,9 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
-#include <math.h>
 
 //==============================================================================
-NewProjectAudioProcessor::NewProjectAudioProcessor()
+Viator_Compressor_Mac_SiliconAudioProcessor::Viator_Compressor_Mac_SiliconAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
      : AudioProcessor (BusesProperties()
                      #if ! JucePlugin_IsMidiEffect
@@ -26,11 +25,11 @@ treeState (*this, nullptr, "PARAMETER", createParameterLayout())
 {
 }
 
-NewProjectAudioProcessor::~NewProjectAudioProcessor()
+Viator_Compressor_Mac_SiliconAudioProcessor::~Viator_Compressor_Mac_SiliconAudioProcessor()
 {
 }
 
-juce::AudioProcessorValueTreeState::ParameterLayout NewProjectAudioProcessor::createParameterLayout()
+juce::AudioProcessorValueTreeState::ParameterLayout Viator_Compressor_Mac_SiliconAudioProcessor::createParameterLayout()
 {
     std::vector <std::unique_ptr<juce::RangedAudioParameter>> params;
     params.reserve(4);
@@ -56,12 +55,12 @@ juce::AudioProcessorValueTreeState::ParameterLayout NewProjectAudioProcessor::cr
 }
 
 //==============================================================================
-const juce::String NewProjectAudioProcessor::getName() const
+const juce::String Viator_Compressor_Mac_SiliconAudioProcessor::getName() const
 {
     return JucePlugin_Name;
 }
 
-bool NewProjectAudioProcessor::acceptsMidi() const
+bool Viator_Compressor_Mac_SiliconAudioProcessor::acceptsMidi() const
 {
    #if JucePlugin_WantsMidiInput
     return true;
@@ -70,7 +69,7 @@ bool NewProjectAudioProcessor::acceptsMidi() const
    #endif
 }
 
-bool NewProjectAudioProcessor::producesMidi() const
+bool Viator_Compressor_Mac_SiliconAudioProcessor::producesMidi() const
 {
    #if JucePlugin_ProducesMidiOutput
     return true;
@@ -79,7 +78,7 @@ bool NewProjectAudioProcessor::producesMidi() const
    #endif
 }
 
-bool NewProjectAudioProcessor::isMidiEffect() const
+bool Viator_Compressor_Mac_SiliconAudioProcessor::isMidiEffect() const
 {
    #if JucePlugin_IsMidiEffect
     return true;
@@ -88,37 +87,37 @@ bool NewProjectAudioProcessor::isMidiEffect() const
    #endif
 }
 
-double NewProjectAudioProcessor::getTailLengthSeconds() const
+double Viator_Compressor_Mac_SiliconAudioProcessor::getTailLengthSeconds() const
 {
     return 0.0;
 }
 
-int NewProjectAudioProcessor::getNumPrograms()
+int Viator_Compressor_Mac_SiliconAudioProcessor::getNumPrograms()
 {
     return 1;   // NB: some hosts don't cope very well if you tell them there are 0 programs,
                 // so this should be at least 1, even if you're not really implementing programs.
 }
 
-int NewProjectAudioProcessor::getCurrentProgram()
+int Viator_Compressor_Mac_SiliconAudioProcessor::getCurrentProgram()
 {
     return 0;
 }
 
-void NewProjectAudioProcessor::setCurrentProgram (int index)
+void Viator_Compressor_Mac_SiliconAudioProcessor::setCurrentProgram (int index)
 {
 }
 
-const juce::String NewProjectAudioProcessor::getProgramName (int index)
+const juce::String Viator_Compressor_Mac_SiliconAudioProcessor::getProgramName (int index)
 {
     return {};
 }
 
-void NewProjectAudioProcessor::changeProgramName (int index, const juce::String& newName)
+void Viator_Compressor_Mac_SiliconAudioProcessor::changeProgramName (int index, const juce::String& newName)
 {
 }
 
 //==============================================================================
-void NewProjectAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
+void Viator_Compressor_Mac_SiliconAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
     juce::dsp::ProcessSpec spec;
     spec.maximumBlockSize = samplesPerBlock;
@@ -133,14 +132,14 @@ void NewProjectAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
     compressorProcessor.setAttack(250.0f);
 }
 
-void NewProjectAudioProcessor::releaseResources()
+void Viator_Compressor_Mac_SiliconAudioProcessor::releaseResources()
 {
     // When playback stops, you can use this as an opportunity to free up any
     // spare memory, etc.
 }
 
 #ifndef JucePlugin_PreferredChannelConfigurations
-bool NewProjectAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts) const
+bool Viator_Compressor_Mac_SiliconAudioProcessor::isBusesLayoutSupported (const BusesLayout& layouts) const
 {
   #if JucePlugin_IsMidiEffect
     juce::ignoreUnused (layouts);
@@ -163,7 +162,7 @@ bool NewProjectAudioProcessor::isBusesLayoutSupported (const BusesLayout& layout
 }
 #endif
 
-void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
+void Viator_Compressor_Mac_SiliconAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
 {
     juce::ScopedNoDenormals noDenormals;
     auto totalNumInputChannels  = getTotalNumInputChannels();
@@ -191,29 +190,29 @@ void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
     outputGainProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
 }
 
-float NewProjectAudioProcessor::scaleRange(float input, float inputLow, float inputHigh, float outputLow, float outputHigh){
+float Viator_Compressor_Mac_SiliconAudioProcessor::scaleRange(float input, float inputLow, float inputHigh, float outputLow, float outputHigh){
     return ((input - inputLow) / (inputHigh - inputLow)) * (outputHigh - outputLow) + outputLow;
 }
 
 //==============================================================================
-bool NewProjectAudioProcessor::hasEditor() const
+bool Viator_Compressor_Mac_SiliconAudioProcessor::hasEditor() const
 {
     return true; // (change this to false if you choose to not supply an editor)
 }
 
-juce::AudioProcessorEditor* NewProjectAudioProcessor::createEditor()
+juce::AudioProcessorEditor* Viator_Compressor_Mac_SiliconAudioProcessor::createEditor()
 {
-    return new NewProjectAudioProcessorEditor (*this);
+    return new Viator_Compressor_Mac_SiliconAudioProcessorEditor (*this);
 }
 
 //==============================================================================
-void NewProjectAudioProcessor::getStateInformation (juce::MemoryBlock& destData)
+void Viator_Compressor_Mac_SiliconAudioProcessor::getStateInformation (juce::MemoryBlock& destData)
 {
     juce::MemoryOutputStream stream(destData, false);
     treeState.state.writeToStream (stream);
 }
 
-void NewProjectAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
+void Viator_Compressor_Mac_SiliconAudioProcessor::setStateInformation (const void* data, int sizeInBytes)
 {
     juce::ValueTree tree = juce::ValueTree::readFromData (data, size_t (sizeInBytes));
     if (tree.isValid()) {
@@ -225,5 +224,5 @@ void NewProjectAudioProcessor::setStateInformation (const void* data, int sizeIn
 // This creates new instances of the plugin..
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
-    return new NewProjectAudioProcessor();
+    return new Viator_Compressor_Mac_SiliconAudioProcessor();
 }

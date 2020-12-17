@@ -31,12 +31,12 @@
 //==============================================================================
 /**
 */
-class NewProjectAudioProcessor  : public juce::AudioProcessor
+class Viator_Compressor_Mac_SiliconAudioProcessor  : public juce::AudioProcessor
 {
 public:
     //==============================================================================
-    NewProjectAudioProcessor();
-    ~NewProjectAudioProcessor() override;
+    Viator_Compressor_Mac_SiliconAudioProcessor();
+    ~Viator_Compressor_Mac_SiliconAudioProcessor() override;
 
     //==============================================================================
     void prepareToPlay (double sampleRate, int samplesPerBlock) override;
@@ -80,5 +80,5 @@ private:
     juce::dsp::Gain<float> inputGainProcessor;
     juce::dsp::Gain<float> outputGainProcessor;
     //==============================================================================
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NewProjectAudioProcessor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Viator_Compressor_Mac_SiliconAudioProcessor)
 };
