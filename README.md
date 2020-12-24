@@ -1,2 +1,2 @@
 # CompressionPrototyping
-Testing the compressor DSP Juce module
+![alt text](https://github.com/landonviator/CompressionPrototyping/blob/main/Agro_Comp.png)
