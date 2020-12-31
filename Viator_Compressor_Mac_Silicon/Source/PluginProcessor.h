@@ -76,9 +76,19 @@ public:
     juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
 
 private:
-    juce::dsp::Compressor<float> compressorProcessor;
-    juce::dsp::Gain<float> inputGainProcessor;
-    juce::dsp::Gain<float> outputGainProcessor;
+    //juce::dsp::Compressor<float> compressorProcessor;
+    //juce::dsp::Gain<float> inputGainProcessor;
+    //juce::dsp::Gain<float> outputGainProcessor;
+    
+    
+    using InputGainProcessor = juce::dsp::Gain<float>;
+    using CompressorProcessor = juce::dsp::Compressor<float>;
+    using OutputGainProcessor = juce::dsp::Gain<float>;
+
+    juce::dsp::ProcessorChain<InputGainProcessor, CompressorProcessor, OutputGainProcessor> compressorProcessor;
+
+    
+
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Viator_Compressor_Mac_SiliconAudioProcessor)
 };

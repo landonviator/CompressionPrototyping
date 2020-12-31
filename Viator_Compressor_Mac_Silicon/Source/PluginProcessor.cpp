@@ -125,17 +125,14 @@ void Viator_Compressor_Mac_SiliconAudioProcessor::prepareToPlay (double sampleRa
     spec.numChannels = getTotalNumOutputChannels();
     
     compressorProcessor.prepare(spec);
-    inputGainProcessor.prepare(spec);
-    outputGainProcessor.prepare(spec);
+    compressorProcessor.get<1>().setAttack(1000.0f);
+    compressorProcessor.get<1>().setRatio(4.0f);
     
-    compressorProcessor.setRatio(4.0f);
-    compressorProcessor.setAttack(250.0f);
 }
 
 void Viator_Compressor_Mac_SiliconAudioProcessor::releaseResources()
 {
-    // When playback stops, you can use this as an opportunity to free up any
-    // spare memory, etc.
+
 }
 
 #ifndef JucePlugin_PreferredChannelConfigurations
@@ -170,24 +167,22 @@ void Viator_Compressor_Mac_SiliconAudioProcessor::processBlock (juce::AudioBuffe
     
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
-    
-    juce::dsp::AudioBlock<float> audioBlock {buffer};
-    
+        
     auto* rawGain = treeState.getRawParameterValue(inputGainSliderId);
-    inputGainProcessor.setGainDecibels(*rawGain);
-    
-    auto* rawThresh = treeState.getRawParameterValue(threshSliderId);
-    compressorProcessor.setThreshold(scaleRange(*rawThresh, 0.0f, 60.0f, -24.0f, -48.0f));
-    
-    auto* rawRelease = treeState.getRawParameterValue(releaseSliderId);
-    compressorProcessor.setRelease(scaleRange(*rawRelease, 0.0f, 100.0f, 5000.0f, 400.0f));
-    
-    auto* rawOutputGain = treeState.getRawParameterValue(outputGainSliderId);
-    outputGainProcessor.setGainDecibels((*rawOutputGain + 6.0f) + (*rawThresh * 0.25f) - (*rawRelease * 0.06f)); //Auto gain to make up for the volume drop from threshold and volume boost from release
+    compressorProcessor.get<0>().setGainDecibels(*rawGain);
 
-    inputGainProcessor.process(juce::dsp::ProcessContextReplacing<float>(audioBlock));
-    compressorProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
-    outputGainProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
+    auto* rawThresh = treeState.getRawParameterValue(threshSliderId);
+    compressorProcessor.get<1>().setThreshold(scaleRange(*rawThresh, 0.0f, 60.0f, -24.0f, -48.0f));
+
+    auto* rawRelease = treeState.getRawParameterValue(releaseSliderId);
+    compressorProcessor.get<1>().setRelease(scaleRange(*rawRelease, 0.0f, 100.0f, 1700.0f, 400.0f));
+
+    auto* rawOutputGain = treeState.getRawParameterValue(outputGainSliderId);
+    compressorProcessor.get<2>().setGainDecibels((*rawOutputGain) + (*rawThresh * 0.25f) - (*rawRelease * 0.06f));
+    //compressorProcessor.get<2>().setGainDecibels(*rawOutputGain);
+
+    juce::dsp::AudioBlock<float> audioBlock (buffer);
+    compressorProcessor.process(juce::dsp::ProcessContextReplacing<float>(audioBlock));
 }
 
 float Viator_Compressor_Mac_SiliconAudioProcessor::scaleRange(float input, float inputLow, float inputHigh, float outputLow, float outputHigh){

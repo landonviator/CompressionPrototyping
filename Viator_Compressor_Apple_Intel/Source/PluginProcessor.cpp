@@ -172,21 +172,22 @@ void Viator_Compressor_Mac_IntelAudioProcessor::processBlock (juce::AudioBuffer<
         buffer.clear (i, 0, buffer.getNumSamples());
     
     juce::dsp::AudioBlock<float> audioBlock {buffer};
+
     
     auto* rawGain = treeState.getRawParameterValue(inputGainSliderId);
     inputGainProcessor.setGainDecibels(*rawGain);
+    inputGainProcessor.process(juce::dsp::ProcessContextReplacing<float>(audioBlock));
     
     auto* rawThresh = treeState.getRawParameterValue(threshSliderId);
     compressorProcessor.setThreshold(scaleRange(*rawThresh, 0.0f, 60.0f, -24.0f, -48.0f));
     
     auto* rawRelease = treeState.getRawParameterValue(releaseSliderId);
-    compressorProcessor.setRelease(scaleRange(*rawRelease, 0.0f, 100.0f, 5000.0f, 400.0f));
+    compressorProcessor.setRelease(scaleRange(*rawRelease, 0.0f, 100.0f, 1700.0f, 400.0f));
+    //std::cout << scaleRange(*rawRelease, 0.0f, 100.0f, 5000.0f, 400.0f) << std::endl;
+    compressorProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
     
     auto* rawOutputGain = treeState.getRawParameterValue(outputGainSliderId);
     outputGainProcessor.setGainDecibels((*rawOutputGain + 6.0f) + (*rawThresh * 0.25f) - (*rawRelease * 0.06f)); //Auto gain to make up for the volume drop from threshold and volume boost from release
-
-    inputGainProcessor.process(juce::dsp::ProcessContextReplacing<float>(audioBlock));
-    compressorProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
     outputGainProcessor.process(juce::dsp::ProcessContextReplacing<float> (audioBlock));
 }
 
